@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  letter-spacing: 0.5px;
+}
+.container {
+  width: 100%;
+  position: relative;
+}
+.background {
+  width: 100%;
+}
+.profile-photo {
+  width: 10%;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: 550px;
+}
+.name {
+  position: absolute;
+  font-size: 40px;
+  top: 70px;
+  left: 70px;
+  color: white;
+  font-weight: bold;
+}
+.job {
+  width: 400px;
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.skills {
+  width: 95%;
+  padding: 20px;
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+.skills .title {
+  text-align: center;
+  box-shadow: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+.skills > div {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 #ffd3eb;
+  margin: 20px 0;
+  padding: 10px;
+}
+.html-line,
+.css-line,
+.js-line {
+  margin: 8px 0;
+  border-radius: 20px;
+  height: 7px;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+.html-line {
+  width: 80%;
+  background-color: green;
+  animation-name: html-progress;
+  box-shadow: 0 0 8px 0 green;
+}
+.css-line {
+  width: 70%;
+  background-color: darkblue;
+  animation-name: css-progress;
+  box-shadow: 0 0 8px 0 darkblue;
+}
+.js-line {
+  width: 10%;
+  background-color: red;
+  animation-name: js-progress;
+  box-shadow: 0 0 8px 0 red;
+}
+@keyframes html-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes css-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes js-progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+.about {
+  width: 95%;
+  padding: 0 20px 20px 20px;
+  margin: auto;
+  font-size: 20px;
+}
+.about .title {
+  text-align: center;
+  box-shadow: none;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0 0 30px 0;
+}
+.about > div {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 0 #ffd3eb;
+  margin: 20px;
+  padding: 10px;
+}
+.about .head {
+  font-weight: bold;
+}
+.about .content {
+  padding: 5px 0 5px 70px;
+  font-weight: bold;
+}
+.contact {
+  width: 95%;
+  padding: 20px 20px 30px 20px;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+}
+.contact .title {
+  text-align: center;
+  font-size: 40px;
+  padding: 0 0 30px 0;
+  font-weight: bold;
+}
+.contact button {
+  width: 250px;
+  font-size: 20px;
+  margin: 25px 0 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  position: relative;
+}
+.contact .fb-btn {
+  background-color: #4267b2;
+  box-shadow: 0 0 15px 0 #4267b2;
+}
+.contact .twitter-btn {
+  background-color: #00acee;
+  box-shadow: 0 0 15px 0 #00acee;
+}
+.contact .github-btn {
+  background-color: black;
+  box-shadow: 0 0 15px 0 black;
+}
+.contact img {
+  width: 20px;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50px -50px);
+}
+@media (max-width: 700px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+  }
+  .container {
+    width: 100%;
+    position: absolute;
+  }
+  .background {
+    width: 700px;
+    position: absolute;
+  }
+  .skills .title {
+    top: 120px;
+  }
+}
